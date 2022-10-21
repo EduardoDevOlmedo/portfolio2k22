@@ -1,0 +1,158 @@
+:root {
+  /* Colors: */
+  --main-gray: #878884;
+  --main-orange: #A62222;
+  --main-black: #303030;
+  --black: #000000;
+  --secondary-orange: #F13131;
+  --secondary-white: #F3F6E4;
+  
+  /* Font/text values */
+  --main-font: 'JetBrains Mono';
+  --secondary-font: 'Montserrat';
+  --font-weight-1: 600px;
+  --font-weight-2: 800px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-25: 25px;
+  --font-size-31: 31px;
+  --font-size-80: 80px;
+  --font-size-168: 168px;
+  --font-size-31-25: 31.25px;
+  --character-spacing-0: 0px;
+  --line-spacing-19: 19px;
+  --line-spacing-24: 24px;
+  --line-spacing-30: 30px;
+  --line-spacing-38: 38px;
+  --line-spacing-106: 106px;
+  --line-spacing-221: 221px;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: var(--main-font);
+  color: var(--black);
+  font-size: clamp(2.4rem, 2.5vw, 2.7rem);
+  line-height: 70px;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  color: var(--secondary-orange);
+  font-size: clamp(3.8rem, 1vw, 4rem);
+  text-shadow: 6px 0px 6px rgba(0,0,0,0.54);
+}
+
+strong {
+  color: var(--secondary-orange);
+}
+
+.biography {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  padding: 20px 60px 0px 60px;
+  background-color: var(--secondary-white);
+  align-items: center;
+}
+
+
+.image-cont {
+  text-align: center;
+  display: flex;
+}
+
+.image-cont img {
+  width: 100%;
+  max-width: 815px;
+  min-width: 220px;
+  height: initial;
+}
+
+.text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: clamp(200px, 65%, 1000px);
+}
+
+.btn-cont {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#skills {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  padding: 0px 60px;
+  position: relative;
+  background-color: var(--secondary-white);
+}
+
+.floating-points {
+  position: absolute;
+  width: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 190px;
+  left: 95%;
+  top: calc(40% - 56px);
+}
+
+.circle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-orange);
+}
+
+.line{
+  height: 50px;
+  border-left: 3px solid var(--secondary-orange);
+  transform: translate(11px, 27px);
+}
+
+.activeCircle {
+  background: var(--secondary-orange);
+}
+
+@media only screen and (max-width: 900px) {
+  .biography {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .image-cont img {
+    height: 250px;
+  }
+
+  .btn-cont {
+    margin-left: 0px;
+  }
+  #skills {
+    padding: 40px 40px;
+  }
+}
+ 
+
+@media only screen and (max-width: 850px) {
+
+  .floating-points {
+    left: 90%;
+  }
+}
