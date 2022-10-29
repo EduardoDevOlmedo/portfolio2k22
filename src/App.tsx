@@ -3,6 +3,7 @@ import Bio from "./sections/Bio"
 import Skills from "./sections/Skills"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Projects from "./sections/Project"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <main className="App">
       <Bio />
       <Skills />
+      <Projects />
     </main>
   )
 }
