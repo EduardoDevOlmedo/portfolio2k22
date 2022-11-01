@@ -1,0 +1,182 @@
+
+
+
+#contact-wrapper {
+    background-color: var(--main-orange);
+    height: 100vh;
+    position: relative;
+}
+
+#contacts {
+    background-color: var(--main-black);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: 0;
+    top: 0;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    padding: 60px;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#contacts h4 {
+    font-size: 4rem;
+    font-weight: lighter;
+    transform: matrix(0.99, -0.16, 0.16, 0.99, 0, 0) rotate(45);
+    font-family: var(--main-font);
+    font-weight: 800;
+    color: #f3f6e4;
+    text-align: center;
+    text-shadow: 1px 0px 1px #000, 0px 1px 1px #000, 2px 1px 1px #000, 1px 2px 1px #000, 3px 2px 1px #000, 2px 3px 1px #000, 4px 3px 1px #000, 3px 4px 1px #0000, 5px 4px 1px #000, 4px 5px 1px #0000, 6px 5px 1px #0000, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+#contacts p {
+    font-family: var(--secondary-font);
+    color: #f3f6e4;
+    font-size: 1.7rem;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#contacts img {
+    width: 200px;
+    max-width: 50%;
+}
+
+footer {
+    display: flex;
+    gap: 40px;
+    margin-top: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer svg {
+    
+    color: #f3f6e4;
+}
+
+#contacts form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 270px;
+    justify-content: center;
+}
+
+.contact-form {
+    padding: '40px';
+    width: 60%;
+}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 2s infinite;
+    animation: jello-horizontal 2s infinite;
+}
+
+ @-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
+
+@media only screen and (max-width: 500px) {
+    
+  
+
+    #contacts h4 {
+        font-size: 2.7rem;
+    }
+
+    footer {
+        gap: 10px;
+    }
+
+    #contacts p {
+        font-size: 16px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    
+    #contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .contact-form {
+        padding: '5px';
+        width: 100%;
+    }  
+}

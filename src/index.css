@@ -1,3 +1,5 @@
+@import url("./Project.css");
+
 :root {
   /* Colors: */
   --main-gray: #878884;
@@ -28,6 +30,9 @@
   --line-spacing-221: 221px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -88,7 +93,7 @@ strong {
   width: 100%;
   display: flex;
   gap: 20px;
-  justify-content: start;
+  justify-content: flex-start;
   margin-top: 100px;
   margin-bottom: 40px;
   text-align: center;
@@ -303,7 +308,7 @@ strong {
   background: #F3F6E4;
   font-family: var(--secondary-font);
   font-weight: normal;
-  padding: 40px;
+  padding: 20px;
 }
 
 .animated-div {

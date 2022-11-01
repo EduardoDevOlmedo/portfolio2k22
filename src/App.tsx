@@ -4,6 +4,7 @@ import Skills from "./sections/Skills"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Projects from "./sections/Project"
+import Contact from "./sections/Contact"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Bio />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   )
 }

@@ -21,9 +21,10 @@ const Bio = () => {
                 width: "clamp(120px, 30%, 170px)",
                 ':hover': {
                   border: '3px solid #F13131', 
+                  cursor: 'pointer'
                 },
               }}
-              variant="outlined" href='#'>Contact</Button>
+              variant="outlined" href='/contact'>Contact</Button>
               <Button
               size="large"
               sx={{
@@ -32,11 +33,12 @@ const Bio = () => {
                 color: '#fff',
                 padding: '4px 15px',
                 width: "clamp(120px, 30%, 250px)",
-                ':hover': {
-                  bgcolor: '#A62222', 
-                },
+                 ':hover': {
+                   bgcolor: '#A62222',
+                   cursor: 'pointer'
+                 },
               }}
-              variant="text" href='#'>See projects</Button>
+              variant="text" href='#projects'>See projects</Button>
             </div>
         </div>
         <div className="image-cont">

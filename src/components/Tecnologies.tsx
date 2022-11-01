@@ -10,7 +10,7 @@ const Tecnologies = () => {
   
     return (
     <div data-aos="fade-down" className="tech-skills">
-    <div data-aos="fade-down">
+    <div data-aos="fade-up">
         <h2>Skills</h2>
     </div>
     <article className="skills-short">

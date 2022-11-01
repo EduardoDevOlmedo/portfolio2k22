@@ -81,7 +81,17 @@ const Projects = () => {
                                 margin: '0 auto',
                                 height: '46px',
                                 background: '#f13131',
-                                fontFamily: 'Montserrat'
+                                fontFamily: 'Montserrat',
+                                transition: 'ease-in 0.25s',
+                                ':hover': {
+                                    background: 'transparent',
+                                    border: '3px solid #f13131',
+                                    opacity: '0.5',
+                                    color: '#F13131',
+                                    fontWeight: 'bold',
+                                    transition: 'ease-in 0.25s',
+                                    cursor: 'pointer'
+                                  },
                             }}
                         >See more</Button>
                     </animated.div> : ''
@@ -95,7 +105,17 @@ const Projects = () => {
                         variant="contained"
                         sx={{   
                             color: '#fff',
-                            fontFamily: 'Montserrat'
+                            background: '#f13131',
+                            fontFamily: 'Montserrat',
+                            transition: 'ease-in 0.25s',
+
+                            ':hover': {
+                                background: 'transparent',
+                                border: '1px solid #f13131',
+                                opacity: '0.5',
+                                transition: 'ease-in 0.25s',
+                                cursor: 'pointer'
+                              },
                         }}
                         onClick={handleEliminate}>Load less</Button>
                     )
@@ -107,8 +127,14 @@ const Projects = () => {
                         <Button 
                         sx={{
                             fontFamily: 'Montserrat',
-                            color: '#f13131',
-                            padding: '10px'
+                            color: '#fff',
+                            transition: 'ease-in 0.25s',
+                            padding: '10px',
+                            ':hover': {
+                                opacity: '0.5',
+                                transition: 'ease-in 0.25s',
+                                cursor: 'pointer'
+                              },
                         }}
                         onClick={handleAdd}>Show more projects</Button>
                     )
