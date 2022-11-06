@@ -6,6 +6,9 @@ import CircleAndLine from '../components/CircleAndLine'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { ProjectLinks } from '../interfaces/Project';
+
+
 
 const Contact = () => {
   
@@ -13,6 +16,22 @@ const Contact = () => {
     width: '45px',
     height: '45px'
   }
+
+  const IconArray: ProjectLinks[] = [
+    {
+      Icon: GitHubIcon,
+      url: "https://github.com/EduardoDevOlmedo"
+    },
+    {
+      Icon: LinkedInIcon,
+      url: "https://www.linkedin.com/in/eduardo-antonio-mojica-013858215/"
+    },
+    {
+      Icon: InstagramIcon,
+      url: "https://www.instagram.com/_ed.xo/"
+    },
+
+  ]
   
   return (
     <section id="contact-wrapper">
@@ -27,15 +46,18 @@ const Contact = () => {
           <img className="jello-horizontal" alt="globe" src={Globe}/>
           <p>Have a question or wanna work together? Let's do it:</p>
           <footer>
-              <GitHubIcon 
-                sx={iconStyles}
-              />
-              <LinkedInIcon 
-                sx={iconStyles}
-              />
-              <InstagramIcon 
-                sx={iconStyles}
-              />
+            {
+              IconArray.map(element => (
+              <a  
+              target="_blank"
+              rel="noreferrer"
+              href={element.url}>
+                <element.Icon
+                  sx={iconStyles}
+                />
+              </a>
+              ))
+            }
           </footer>
         </div>
       </section>

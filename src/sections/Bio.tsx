@@ -24,7 +24,7 @@ const Bio = () => {
                   cursor: 'pointer'
                 },
               }}
-              variant="outlined" href='/contact'>Contact</Button>
+              variant="outlined" href='#contacts'>Contact</Button>
               <Button
               size="large"
               sx={{

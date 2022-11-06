@@ -1,8 +1,16 @@
 import { Button } from '@mui/material'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const FourOFour = () => {
-  return (
+  
+    const router = useNavigate()
+
+    const handleBack = () => {
+        router(-1)
+    }
+
+    return (
     <section style={{
         background: '#F3F6E4',
         display: 'grid',
@@ -24,7 +32,7 @@ const FourOFour = () => {
                 background: '#f13131',
                 fontFamily: 'Montserrat'
             }}
-            href="/">Go back</Button>
+            onClick={handleBack}>Go back</Button>
         </div>
     </section>
   )

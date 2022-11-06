@@ -63,9 +63,9 @@ const Projects = () => {
             <div className='box-container'>
          {
                   transition((style, item) => 
-                    item.icon && item ? <animated.div className="animated-div" style={style}>
+                    item ? <animated.div className="animated-div" style={style}>
                            <div>
-                              <item.icon />
+                              <item.Icon />
                                <h4>
                                {item.title}
                                </h4>

@@ -1,4 +1,9 @@
 
+body {
+  
+  background-color: var(--secondary-white);
+}
+
 
 
 #contact-wrapper {
@@ -79,9 +84,92 @@ footer svg {
     width: 60%;
 }
 
+#project {
+  background-color: var(--secondary-white);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  gap: 20px;
+  text-align: justify;
+  height: 100vh;
+  height: 100vh;
+  max-height: 100%;
+}
+
+.react-slideshow-container {
+  width: 300px;
+  max-width: 90%;
+}
+
+#project h4 {
+  font-family: var(--main-font);
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+#project p {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  padding-top: 16rem;
+}
+
+.project-desc {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    align-items: flex-start;
+    gap: 20px;
+    width: 60%;
+}
+
+
+
+.titleImageContainer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 430px;
+  margin: 20px;
+}
+
+.titleImageContainer svg {
+  font-size: 6rem;
+  color: var(--secondary-orange);
+}
+
 .jello-horizontal {
 	-webkit-animation: jello-horizontal 2s infinite;
     animation: jello-horizontal 2s infinite;
+}
+
+#carrousel {
+  padding: 0 3rem 5rem;
+  background-color: var(--secondary-white); 
+}
+
+.each-slide-effect > div {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 210px;
+}
+
+button.default-nav svg {
+  background: #f31131;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+} 
+
+button.default-nav svg path {
+  filter: invert(100%) sepia(0%) saturate(7456%) hue-rotate(343deg) brightness(103%) contrast(103%);
 }
 
  @-webkit-keyframes jello-horizontal {
@@ -144,7 +232,8 @@ footer svg {
               transform: scale3d(1, 1, 1);
     }
   }
-  
+
+
 
 @media only screen and (max-width: 500px) {
     
@@ -178,5 +267,29 @@ footer svg {
     .contact-form {
         padding: '5px';
         width: 100%;
-    }  
+    }
+
+    .titleImageContainer {
+      width: 100%;
+    }
+
+    .project-desc {
+      width: 100%;
+    }
+
+    
 }
+
+
+@media only screen and (min-width: 900px) {
+    
+  #project {
+    flex-direction: row;
+  }
+
+  #project p {
+    padding-top: 4.3rem;
+  }
+  
+}
+
