@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import CircleAndLine from '../components/CircleAndLine';
 import { Button } from '@mui/material';
 import { useTransition, animated, config } from 'react-spring';

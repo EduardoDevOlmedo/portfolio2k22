@@ -1,9 +1,6 @@
 import CircleAndLine from "../components/CircleAndLine"
-
-import { Text } from "../utils/text"
 import Tecnologies from "../components/Tecnologies";
 import SkillsComponent from "../components/SkillsComponent";
-import { useState } from "react";
 
 const Skills = () => {
   

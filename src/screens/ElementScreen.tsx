@@ -1,5 +1,5 @@
 import { Button, useMediaQuery } from '@mui/material'
-import React, { useEffect } from 'react'
+import React from 'react'
 import Carrousel from '../components/Carrousel'
 import Icon from '../components/Icon'
 import { ProjectScreen } from '../interfaces/Project'
