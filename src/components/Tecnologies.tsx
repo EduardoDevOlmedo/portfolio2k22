@@ -32,7 +32,8 @@ const Tecnologies = () => {
                     height: '175px',
                     background: '#303030',
                     borderRadius: '10px',
-                    padding: '15px'
+                    padding: '15px',
+                    border: '4px solid black'
 
                 }
             }

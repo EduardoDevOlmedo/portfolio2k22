@@ -7,43 +7,29 @@ interface Props {
     children: JSX.Element | JSX.Element[]
 }
 
-const SkillContainer:React.FC<Props> = ({fatherStyle, childStyle, children}) => {
+const SkillContainer:React.FC<Props> = ({childStyle, children}) => {
  
   const matches = useMediaQuery('(max-width:1140px)');
   
   const smallChildStyle: React.CSSProperties = {
-    position: 'absolute',
     right: '0px',
     bottom: '15px',
     background: '#303030',
-    borderRadius: '10px',
-    width: '320px',
-    height: '625px',
+    borderRadius: '20px',
     textAlign: 'center',
     padding: '15px',
     margin: 0,
-    display: 'grid'
+    display: 'grid',
+    border: '4px solid #000'
   }
 
-  const fatherStyleDef: React.CSSProperties = {
-    position: 'relative',
-    width: '320px',
-    height: '625px',
-    background: '#f13131',    
-    borderRadius: '10px',
-    margin: 0
 
-  }
 
   return (
-    <div 
-    style={!matches ? fatherStyle : fatherStyleDef}
-    id="langSkillsFather">
       <div
         style={!matches ? childStyle : smallChildStyle}
       >
         {children}
-      </div>
     </div>
   )
 }

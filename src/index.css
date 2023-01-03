@@ -46,7 +46,6 @@ h2 {
   color: var(--black);
   font-size: clamp(2.4rem, 2.5vw, 2.7rem);
   line-height: 70px;
-  letter-spacing: 2.5px;
 }
 
 h2 {
@@ -85,7 +84,6 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
   width: clamp(200px, 65%, 1000px);
 }
 
@@ -105,7 +103,12 @@ strong {
   flex-direction: row;
   padding: 0px 60px;
   position: relative;
+  margin-bottom: 20px;
   background-color: var(--secondary-white);
+}
+
+.skills-short p{
+  font-size: 1.26rem;
 }
 
 .floating-points {
@@ -170,26 +173,12 @@ strong {
   
 }
 
-#langSkillsFather {
-  position: relative;
-  width: 400px;
-  background: red;
-  display: flex;
 
-}
 
 .tecs {
   margin-top: 80px;
 }
 
-#langSkillsFather div:first-child {
-  position: absolute;
-  right: 10px;
-  bottom: 0px;
-  background: blue;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 
 .icon {
   display: inline-block;
@@ -288,9 +277,10 @@ strong {
 }
 
 #projects h2 {
-  transform: rotate(5deg) translate(-20px, 5px);
-  margin: 30px;
+  padding: 30px;
 }
+
+
 
 #projects .box-container {
   display: flex;
@@ -304,6 +294,7 @@ strong {
 .box-container .animated-div {
   border-radius: 10px;
   width: 540px;
+
   height: 340px;
   background: #F3F6E4;
   font-family: var(--secondary-font);
@@ -345,7 +336,7 @@ strong {
 
 @media only screen and (max-width: 600px) {
   .box-container .animated-div {
-    width: 270px;
+    width: 240px;
     font-size: 80%;    
     height: 350px;
 
@@ -359,6 +350,9 @@ strong {
     margin: 15px !important;
   }
   
+  .icontext-container {
+    flex-direction: column;
+  }
   
 
 }
@@ -366,11 +360,10 @@ strong {
 @media only screen and (max-width: 900px) {
   .biography {
     flex-direction: column;
-    height: 120vh;
   }
 
   .image-cont img {
-    height: 250px;
+    display: none;
   }
 
   .btn-cont {
@@ -378,7 +371,7 @@ strong {
   }
 
   #skills {
-    padding: 40px 40px;
+    padding: 20px 40px;
   }
 
 
@@ -410,6 +403,9 @@ strong {
     align-items: center;
     height: 100%;
   }
+
+
+  
 
   #projects {
     height: 100%;

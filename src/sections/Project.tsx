@@ -10,7 +10,6 @@ import { ProjectText } from '../utils/text';
 
 const Projects = () => {
   
-
     const startingProjects: Project[] = [
         ProjectText[0], ProjectText[1]
     ] 

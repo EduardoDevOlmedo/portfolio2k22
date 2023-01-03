@@ -9,7 +9,7 @@ export const Text = {
     skills: {
         bio: "I am frontend developer with experience building fullstack applications and websites using React, MongoDB and NextJS with the inclussion of amazing CSS.",
         backendSkills: 'I have a nice understandment of the backend part, I have done fullstack apps all by myself, using Next and MongoDB',
-        helper: 'I love helping others without waiting anything in exchange. I love helping others!',
+        helper: 'I love helping others without waiting anything in exchange. I love helping others! It makes me feel happy and I truly enjoy it',
         fastLearner: 'I tend to learn things pretty easily, practicing until reaching a decent level, and then going to pro mode.',
         proactive: 'I am always active to do anything if it is needed, searching new ways to improve the code and studying.' 
     },
